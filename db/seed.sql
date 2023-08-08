@@ -1,29 +1,32 @@
 -- insert data and their values --
 
-INSERT INTO course_names (name)
-VALUES ("Intro to JavaScript"),
-       ("Data Science"),
-       ("Linear Algebra"),
-       ("History of the Internet"),
-       ("Machine Learning"),
-       ("Game Design"),
-       ("Cloud Development");
-
-INSERT INTO course_names (name)
-VALUES ("Intro to JavaScript"),
-       ("Data Science"),
-       ("Linear Algebra"),
-       ("History of the Internet"),
-       ("Machine Learning"),
-       ("Game Design"),
-       ("Cloud Development");
+INSERT INTO department (department_name)
+VALUES ("Sales"), -- first ID #1 ---
+       ("Engineering"),
+       ("Finance"),
+       ("Legal");
+    
+INSERT INTO role (role_title, role_salary, department_id)
+VALUES ("Sales Lead", 100000, 1),
+       ("Salesperson", 80000, 1),
+       ("Lead Engineer", 150000, 2),
+       ("Software Engineer", 120000, 2),
+       ("Account Manager", 160000, 3),
+       ("Accountant", 125000, 3),
+       ("Legal Team Lead", 250000, 4),
+       ("Lawyer", 190000, 4);
 
 
-INSERT INTO course_names (name)
-VALUES ("Intro to JavaScript"),
-       ("Data Science"),
-       ("Linear Algebra"),
-       ("History of the Internet"),
-       ("Machine Learning"),
-       ("Game Design"),
-       ("Cloud Development");
+INSERT INTO employee (first_name, last_name, role_id)
+VALUES ("John", "Doe", 1 ),
+       ("Mike", "Chan", 2),
+       ("Ashley", "rodriguez", 3),
+       ("Kevin", "Tupik", 4),
+       ("Kunal", "Singh", 5),
+       ("Malia", "Brown", 6),
+       ("Sarah", "Lourd", 7),
+       ("Tom", "Allen", 8);
+UPDATE employee SET manager_id = 1 WHERE id = 2;
+UPDATE employee SET manager_id = 3 WHERE id = 4;
+UPDATE employee SET manager_id = 5 WHERE id = 6;
+UPDATE employee SET manager_id = 7 WHERE id = 8;
