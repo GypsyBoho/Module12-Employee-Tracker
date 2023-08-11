@@ -1,6 +1,6 @@
 -- insert data and their values --
 
-INSERT INTO department (department_name)
+INSERT INTO Department (department_name)
 VALUES ("Sales"), -- first ID #1 ---
        ("Engineering"),
        ("Finance"),
