@@ -20,10 +20,11 @@ CREATE TABLE role (
 
 CREATE TABLE employee (
     id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30) NOT NULL,
+    employee_first_name VARCHAR(30) NOT NULL,
+    employee_last_name VARCHAR(30) NOT NULL,
     role_id INT,
-    FOREIGN KEY (role_id) REFERENCES role(id)
+    employee_salary INT,
+    FOREIGN KEY (role_id) REFERENCES role(id),
     manager_id INT,
-    FOREIGN KEY (manager_id) REFERENCES employee(id), 
+    FOREIGN KEY (manager_id) REFERENCES employee(id) 
 );
